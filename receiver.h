@@ -1,17 +1,19 @@
-#include <string>
+//#include <string>
 #include <iostream>
 
 #include "person.pb.h"
 
-using namespace std;
-using namespace viettel::messages;
 
 
-namespace viettel {
-    class Receiver {
+namespace viettel 
+{
+    class Receiver 
+    {
     public:
         Receiver();
-        static void logReceivedMessage(Person *person) {
+        
+        static void logReceivedMessage(viettel::messages::Person *person) 
+        {
             std::cout << person->id() << " " <<  person->name() << " " << person->email() << std::endl;
         }
     };

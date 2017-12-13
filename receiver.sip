@@ -2,19 +2,20 @@
 
 %Include std_string.sip
 %Include person.sip
+%Include message.sip
 
-%ModuleHeaderCode
-#include <string>
-using namespace std;
-%End
 
-class Receiver 
+namespace viettel 
 {
-    %TypeHeaderCode
-    #include "receiver.h"
-    using namespace viettel;
-    %End
+    class Receiver 
+    {
+        %TypeHeaderCode
+        #include "receiver.h"
+        //using namespace viettel;
+        //using namesapce viettel::message;
+        %End
 
-    public:
-        static void logReceivedMessage(Person *person);
+        public:
+            static void logReceivedMessage(viettel::messages::Person *person);
+    };
 };

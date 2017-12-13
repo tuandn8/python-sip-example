@@ -18,7 +18,6 @@ _sym_db = _symbol_database.Default()
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='person.proto',
   package='viettel.messages',
-  syntax='proto2',
   serialized_pb=_b('\n\x0cperson.proto\x12\x10viettel.messages\"1\n\x06Person\x12\x0c\n\x04name\x18\x01 \x02(\t\x12\n\n\x02id\x18\x02 \x02(\x05\x12\r\n\x05\x65mail\x18\x03 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
@@ -62,7 +61,6 @@ _PERSON = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
-  syntax='proto2',
   extension_ranges=[],
   oneofs=[
   ],
